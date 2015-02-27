@@ -1,9 +1,11 @@
 <ul class="postNoteArea">
 	<li ng-repeat="post in allPosts">
 		<div class="noteBox">
-			{{ post.title }}
-			{{ post.too }}
-			{{ post.note }}
+			<div class="noteTitle">Title: {{ post.title }} </div>
+			<div class="noteToo">Too: {{ post.too }} </div>
+						<div>{{ post.note }}</div>
+			<button class="editNoteButton">Edit Note</button>
+			<button class="deleteNoteButton">Delete Note</button>		
 		</div>
 	</li>
 </ul>

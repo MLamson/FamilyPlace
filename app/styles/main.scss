@@ -28,6 +28,26 @@ body {
   list-style: none;
 }
 .noteBox {
-  width:100px;
-  height: auto;
-}
+  padding:5px;
+  margin-bottom: 5px;
+  width:150px;
+  height: 150px;
+  background-color:lightyellow;
+  border: 2px solid lightblue;
+  border-radius: 3px;
+  font-size: 12px;
+  .noteTitle {
+    border-bottom: 2px solid darkblue;
+    font-size: 16px;
+  }
+  .deleteNoteButton {
+    width: 66px;
+    line-height: 8px;
+    font-size: 9px;
+  }
+  .editNoteButton {
+    width: 66px;
+    line-height: 8px;
+    font-size: 9px;
+  }
+}//close .noteBox
