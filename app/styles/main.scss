@@ -11,7 +11,7 @@ body {
 
 .hero-unit {
   margin: 50px auto 0 auto;
-  width: 600px;
+  width: 800px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
@@ -23,4 +23,11 @@ body {
     line-height: 1;
     letter-spacing: -1px;
   }
+}
+.postNoteArea {
+  list-style: none;
+}
+.noteBox {
+  width:100px;
+  height: auto;
 }
