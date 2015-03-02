@@ -4,8 +4,9 @@
 			<div class="noteTitle">Title: {{ post.title }} </div>
 			<div class="noteToo">Too: {{ post.too }} </div>
 						<div>{{ post.note }}</div>
-			<button class="editNoteButton">Edit Note</button>
-			<button class="deleteNoteButton">Delete Note</button>		
+			<a href="#/edit"><button ng-click="editPosts(post)" class="editNoteButton">Edit Note</button></a>
+			<button ng-click="removePost(post)" class="deleteNoteButton">Delete Note</button>		
 		</div>
 	</li>
 </ul>
+

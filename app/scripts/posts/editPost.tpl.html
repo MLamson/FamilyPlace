@@ -1,0 +1,8 @@
+<form ng-submit="updatePosts(post)">
+	<input ng-model="post.title"type="text" placeholder="Note Title"> <br />
+	<input ng-model="post.too" type="text" placeholder="Name(s) of who note is for"><br />
+	<textarea ng-model="post.note" placeholder="Note Description"></textarea>
+	<button ng-click="updatePosts(post)">Edit Note</button>
+
+
+</form>

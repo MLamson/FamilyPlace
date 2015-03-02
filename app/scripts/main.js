@@ -27,7 +27,11 @@ angular.module('Posts', ['ngRoute'])
 		.when('/add', {
 			templateUrl: 'scripts/posts/addPost.tpl.html',
 			controller: 'PostsController',
-			
+		})
+
+		.when('/edit', {
+			templateUrl: 'scripts/posts/editPost.tpl.html',
+			controller: 'PostsController'
 
 		})
 
