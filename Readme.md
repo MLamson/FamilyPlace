@@ -1,3 +1,3 @@
-## Yo, I'm a Readme
+## CRUD application for TIY assignment.
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+Looking to add other features to this in the future.
