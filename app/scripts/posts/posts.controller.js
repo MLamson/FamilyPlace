@@ -12,13 +12,16 @@
           // console.log(data.results);
         }),
 
-         $scope.updatePosts = function (p) {
-          PostsFactory.update(p);
-          console.log('inupdate');
-         },
+         // $scope.updatePosts = function (p) {
+         //  PostsFactory.update(p);
+         //  console.log('inupdate');
+         // },
 
          $scope.editPosts = function (p) {
-          PostsFactory.edit(p);
+          PostsFactory.edit(p).success(function(){
+
+            
+          });
           console.log(p);
          },
 

@@ -35,16 +35,16 @@
          return $http.get(PARSE.URL + 'classes/Posts' + obj.objectId, PARSE.CONFIG);
       };
 
-      var updatePosts = function (obj) {
-         return $http.put(PARSE.URL + 'classes/Posts' + obj.objectId, PARSE.CONFIG);
-      };
+      // var updatePosts = function (obj) {
+      //    return $http.put(PARSE.URL + 'classes/Posts' + obj.objectId, PARSE.CONFIG);
+      // };
 
       return {
         add : addSinglePost,
         retrieve : getAllPosts,
         remove : removePost,
         edit : editPosts,
-        update : updatePosts
+        // update : updatePosts
       }
     }
 
