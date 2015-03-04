@@ -34,6 +34,14 @@ angular.module('Posts', ['ngRoute'])
 			controller: 'PostsController'
 
 		})
+		.when('/register', {
+      templateUrl: 'scripts/users/user.register.tpl.html',
+      controller: 'UserCtrl'
+    })
+    .when('/login', {
+      templateUrl: 'scripts/users/user.login.tpl.html',
+      controller: 'UserCtrl'
+    })
 
 	})
 
