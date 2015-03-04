@@ -2,7 +2,7 @@
   
   'use strict';
 
-  angular.module('T5User')
+  angular.module('User')
 
   .factory('UserFactory', ['$http', 'PARSE', '$cookieStore', '$location',
 

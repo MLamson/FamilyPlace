@@ -2,7 +2,7 @@
   
   'use strict';
 
-  angular.module('T5User', ['ngRoute', 'ngCookies'])
+  angular.module('User', ['ngRoute', 'ngCookies'])
 
   .controller('UserCtrl', ['$scope', 'UserFactory', '$location', 
 

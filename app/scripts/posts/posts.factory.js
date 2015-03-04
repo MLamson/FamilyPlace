@@ -8,6 +8,7 @@
          // Getting A List of posts
       var getAllPosts = function () {
         return $http.get(PARSE.URL + 'classes/Posts', PARSE.CONFIG);
+        console.log('in getAllPosts post.factory.js');
       };
 
          // Adding A Post

@@ -8,7 +8,7 @@
 
          PostsFactory.retrieve().success( function (data) {
           $scope.allPosts = data.results;
-          // console.log('in retrieve');
+          console.log('in retrieve');
           // console.log(data.results);
         }),
 
@@ -48,6 +48,6 @@
           $location.path('/');
         });
       }
-      ]);
+    ]);
 
 }());

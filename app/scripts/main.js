@@ -17,7 +17,7 @@ angular.module('Posts', ['ngRoute'])
 
 	})
 
-		.config(function ($routeProvider) {
+		.config(['$routeProvider', function ($routeProvider) {
 
 		$routeProvider.when('/', {
 			templateUrl: 'scripts/posts/listPosts.tpl.html',
@@ -37,13 +37,15 @@ angular.module('Posts', ['ngRoute'])
 		.when('/register', {
       templateUrl: 'scripts/users/user.register.tpl.html',
       controller: 'UserCtrl'
+
     })
     .when('/login', {
       templateUrl: 'scripts/users/user.login.tpl.html',
       controller: 'UserCtrl'
+
     })
 
-	})
+	}])
 
 
 
