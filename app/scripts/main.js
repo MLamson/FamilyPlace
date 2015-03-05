@@ -1,6 +1,6 @@
 ;(function (){
 	
-angular.module('Posts', ['ngRoute'])
+angular.module('Posts', ['ngRoute', 'ngCookies', 'User'])
 
 .constant('PARSE', {
 

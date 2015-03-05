@@ -28,10 +28,11 @@ body {
   list-style: none;
 }
 .noteBox {
+  float:left;
   padding:5px;
-  margin-bottom: 5px;
+  margin: 5px;
   width:150px;
-  height: 150px;
+  height: auto;
   background-color:lightyellow;
   border: 2px solid lightblue;
   border-radius: 3px;

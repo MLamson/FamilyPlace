@@ -2,8 +2,10 @@
 
   angular.module('Posts')
 
-    .factory('PostsFactory', ['$http', '$rootScope', 'PARSE',
-      function ($http, $rootScope, PARSE) {
+    .factory('PostsFactory', ['$http', '$rootScope', 'PARSE', 'UserFactory',
+      function ($http, $rootScope, PARSE, UserFactory) {
+
+         var user = UserFactory.user();
 
          // Getting A List of posts
       var getAllPosts = function () {
@@ -12,8 +14,32 @@
       };
 
          // Adding A Post
-      var addSinglePost = function (obj) {
-        $http.post(PARSE.URL + 'classes/Posts', obj, PARSE.CONFIG)
+      var addSinglePost = function (postObj) {
+
+        /////////////////////////
+        ///////////////////////
+        ///////////////////////
+         postObj.user = {
+          __type: 'Pointer',
+          className: '_User',
+          objectId: user.objectId
+        }
+
+        // Set up Access Control
+        var ACLObj = {};
+        ACLObj[user.objectId] = {
+          'read' : true,
+          'write' : true
+        }
+
+        postObj.ACL = ACLObj;
+
+        //return $http.post(PARSE.URL + 'classes/Lists', listObj, PARSE.CONFIG);
+        ///////////////
+        ///////////////
+        ///////////////
+
+        $http.post(PARSE.URL + 'classes/Posts', postObj, PARSE.CONFIG)
           .success( function () {
             $rootScope.$broadcast('post:added');
           }
